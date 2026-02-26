@@ -3,8 +3,9 @@
 use App\Http\Controllers\GreetingController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [GreetingController::class, 'index'])->name('home');
 
-Route::get('/services', [GreetingController::class, 'index'])->name('services.index');
+Route::get('/services', function () {
+    // TODO: Create a view for services
+    return 'Services page';
+})->name('services.index');
