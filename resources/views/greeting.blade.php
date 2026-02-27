@@ -16,7 +16,7 @@
             </h1>
 
             <p class="text-gray-500 italic mb-6">
-                Welcome back to Elite Beauty Salon. Ready for a glow-up?
+                Welcome back to Elite Beauty Salon. Ready for a new glow-up?
             </p>
 
             <a href="{{ route('services.index') }}"
