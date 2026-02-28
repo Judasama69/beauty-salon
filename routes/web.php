@@ -9,3 +9,7 @@ Route::get('/services', function () {
     // TODO: Create a view for services
     return 'Services page';
 })->name('services.index');
+
+use App\Http\Controllers\ServiceController;
+
+Route::get('/services', [ServiceController::class, 'index'])->name('services.index');
